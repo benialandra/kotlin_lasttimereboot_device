@@ -1,0 +1,51 @@
+<!-- D:/xampp/htdocs/api_call_http/app/src/main/res/layout/activity_main.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:id="@+id/main"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:padding="16dp" tools:context=".MainActivity">
+
+    <!-- Tambahkan EditText untuk URL (Opsional) -->
+    <EditText android:id="@+id/urlEditText" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:hint="Masukkan URL file"
+        android:inputType="textUri"
+        android:text="https://effigis.com/wp-content/uploads/2015/02/Airbus_Pleiades_50cm_8bit_RGB_Yogyakarta.jpg" />
+    <!-- Ganti dengan URL file contoh Anda jika perlu -->
+
+    <Button android:id="@+id/downloadFileButton" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_marginTop="8dp"
+        android:text="Unduh File" />
+
+    <TextView android:id="@+id/downloadStatusTextView" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_marginTop="8dp"
+        android:text="Status: -" />
+
+    <!-- Elemen UI Anda yang sudah ada bisa diletakkan di sini juga -->
+    <TextView android:id="@+id/helloTextView" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:text="IT SUPPORT 2DZ1"
+        android:layout_gravity="center_horizontal" android:layout_marginTop="16dp" />
+
+    <TextView android:id="@+id/ipAddressTextView" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp" />
+
+    <TextView android:id="@+id/deviceNameTextView" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp" />
+
+    <Button android:id="@+id/rebootDeviceButton" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp" android:text="Informasi Penting" />
+
+    <!-- lastCheckInTextView dan pressRebootButtonTextView bisa disembunyikan awalnya jika tidak langsung digunakan -->
+    <TextView android:id="@+id/lastCheckInTextView" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:visibility="gone"
+        tools:text="Last contact: 2024-05-16 10:00:00" android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp" />
+
+    <TextView android:id="@+id/pressRebootButtonTextView" android:visibility="gone"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        tools:text="Consider rebooting: Press 'Reboot Device' button."
+        android:layout_gravity="center_horizontal" android:layout_marginTop="8dp" />
+
+</LinearLayout>
